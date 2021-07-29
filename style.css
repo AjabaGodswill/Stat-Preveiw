@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Font-size: 16px */
+    
+}
+
+body{
+    background-color:  hsl(233, 47%, 7%);
+}
+
+.mobile{
+    display: none;
+}
+
+.container{
+    display: flex;
+    background-color:  hsl(233, 47%, 7%);
+    height: 100vh;
+}
+
+.left{
+    margin: 70px 0 70px 70px;
+    background-color: hsl(244, 38%, 16%);
+    flex: 50;
+    border-top-left-radius: .8rem;
+    border-bottom-left-radius: .8rem;
+
+}
+
+#header{
+    font-family: 'Lexend Deca', sans-serif;
+    color: #fff;
+    margin: 40px;
+}
+h1 > span{
+    color: hsl(277, 64%, 61%);
+}
+.left > p{
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 40px;
+}
+
+
+section{
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    color: hsla(0, 0%, 100%, 0.6);
+    margin: 40px;
+}
+
+section > div{
+    text-transform: uppercase;
+    margin-top: 70px;
+    width: 33%;
+}
+
+section > div h3{
+    color: #fff;
+    font-weight: 400;
+}
+.right{
+    border-top-right-radius: .8rem;
+    border-bottom-right-radius: .8rem;
+    margin: 70px 70px 70px 0;
+    background-image: url(./images/image-header-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    flex: 50;
+}
+
+.overlay{
+    border-top-right-radius: .8rem;
+    border-bottom-right-radius: .8rem;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: hsla(277, 64%, 61%, 0.6);
+    z-index: 1;
+}
+
+
+/* mobile design */
+@media only screen  and (max-width: 567px){
+    .container{
+        display: none;
+        
+    }
+    body{
+         background-color:  hsl(233, 47%, 7%);
+    }
+    .mobile{
+        display: block;
+       padding: 20px 0 20px 0;
+        height: 100%;
+    }
+
+    .mobile-image{
+        border-top-right-radius: .8rem;
+        border-top-left-radius: .8rem;
+        margin: 40px 20px 0 20px;
+        background-image: url(./images/image-header-mobile.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 350px;
+    }
+
+    .overlay{
+        border-top-right-radius: .8rem;
+        border-top-left-radius: .8rem;
+    }
+
+    .mobile-text{
+        border-bottom-left-radius: .8rem;
+        border-bottom-right-radius: .8rem;
+        background-color: hsl(244, 38%, 16%);
+        margin: 0 20px 50px 20px;
+        padding: 20px;
+    }
+
+    .mobile-text>div > div{
+        padding: 20px;
+    }
+
+
+    .mobile-text>div > div p{
+        text-transform: uppercase;
+    }
+    h1{
+        text-align: center;
+        color: #fff;
+        padding-bottom: 20px;
+    }
+
+    h3{
+        color: #fff;
+        text-align: center;
+    }
+
+    p{
+        color: hsla(0, 0%, 100%, 0.75);
+        text-align: center;
+    }
+}
